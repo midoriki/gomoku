@@ -12,7 +12,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "build:deploy": "react-scripts build && cp -RT build ../app/gomoku",
+    "build:deploy": "react-scripts build && rm -rf ../app/gomoku/* && cp -RT build ../app/gomoku",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
