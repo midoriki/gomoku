@@ -1,5 +1,6 @@
 import React from 'react';
 import io from 'socket.io-client';
+
 import Controller from './components/Controller';
 import './App.css';
 import {SOCKET_IO_HOST} from './config'
@@ -35,7 +36,17 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div className="app">{this.display()}</div>
+      <div className="app">
+        <div className="header">
+          <div className="title">
+            Gomoku
+          </div>
+          <div className="nav">
+            <a href="/me/">Home</a>
+          </div>
+        </div>
+        {this.display()}
+      </div>
     );
   }
 }

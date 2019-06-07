@@ -299,3 +299,35 @@ a#home {
   float: right;
   color: #fff;
 }
+
+.header {
+  height: 50px;
+  background-color: black;
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.header * {
+  color: white;
+}
+
+.header div {
+  line-height: 50px;
+}
+
+.title {
+  font-size: 24px;
+  padding-left: 30px;
+  grid-column: 1/2;
+}
+
+.nav {
+  text-align: right;
+  padding-right: 20px;
+  grid-column: 2/2;
+}
+
+.nav a {
+  text-decoration: none;
+}
