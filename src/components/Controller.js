@@ -486,7 +486,6 @@ class Controller extends React.Component {
           <div className='lobby'>
             <div className='my-user'>
               Welcome, <span className="highlight">{myUser ? myUser.username : ''}</span>
-              <a href="/" id="home"><span>Home</span></a>
             </div>
             <UserList invite={this.handleInvite} users={users} myUser={myUser}/>
             {this.displayPopup(this.clearMessage)}
