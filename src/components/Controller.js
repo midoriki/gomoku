@@ -23,6 +23,9 @@ class Controller extends React.Component {
       winner: '',
       score: null
     }
+  }
+
+  componentDidMount = () => {
     const context = this;
     const socket = this.props.socket;
 
@@ -106,7 +109,7 @@ class Controller extends React.Component {
     socket.on('register_success', data => {
       const user = data.user;
       setLocalItem('user', user);
-    })
+    });
   }
 
   updateScore = (winner) => {
